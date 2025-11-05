@@ -1,11 +1,7 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "../components/ui/sonner";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
+export const metadata = {
   title: "Aranjit Archita - Portfolio",
   description: "Full-Stack Developer specializing in Vue.js, Laravel, and Node.js for enterprise applications. Building robust, scalable solutions for complex business needs.",
   keywords: ["Full-Stack Developer", "Vue.js", "Laravel", "Node.js", "Enterprise Applications", "Web Development"],
@@ -24,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         {children}
         <Toaster />
       </body>

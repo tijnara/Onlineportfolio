@@ -1,28 +1,14 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+// This project is built with Vite (not Next.js). The original Next.js
+// middleware file referenced `next/server` which pulls Next internals into the
+// client bundle and causes runtime issues like "process is not defined".
+//
+/// Keep a no-op placeholder export to avoid type errors in imports elsewhere.
 
-export function middleware(request: NextRequest) {
-  // Add custom headers for security
-  const response = NextResponse.next();
-  
-  // Security headers
-  response.headers.set('X-Frame-Options', 'DENY');
-  response.headers.set('X-Content-Type-Options', 'nosniff');
-  response.headers.set('Referrer-Policy', 'origin-when-cross-origin');
-  
-  return response;
+export function middlewarePlaceholder() {
+  // No-op: intentionally left blank for Vite client build.
+  return null;
 }
 
-// See "Matching Paths" below to learn more
 export const config = {
-  matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - api (API routes)
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     */
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
-  ],
+  // Intentionally empty: middleware handled by hosting layer if needed.
 };
