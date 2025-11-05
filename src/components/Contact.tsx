@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -57,8 +57,8 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="text-sm text-gray-500 mb-1">Email</div>
-                  <a href="mailto:hello@example.com" className="text-gray-900 hover:text-orange-500">
-                    hello@example.com
+                  <a href="mailto:aranjitarchita@gmail.com" className="text-gray-900 hover:text-orange-500">
+                    aranjitarchita@gmail.com
                   </a>
                 </div>
               </div>
@@ -69,8 +69,8 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="text-sm text-gray-500 mb-1">Phone</div>
-                  <a href="tel:+1234567890" className="text-gray-900 hover:text-orange-500">
-                    +1 (234) 567-890
+                  <a href="tel:+639686786072" className="text-gray-900 hover:text-orange-500">
+                    09686786072
                   </a>
                 </div>
               </div>
@@ -82,7 +82,7 @@ export function Contact() {
                 <div>
                   <div className="text-sm text-gray-500 mb-1">Location</div>
                   <div className="text-gray-900">
-                    San Francisco, CA
+                    Lingayen, Pangasinan
                   </div>
                 </div>
               </div>

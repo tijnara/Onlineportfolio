@@ -24,7 +24,7 @@ export function Hero() {
             <a href="https://github.com/tijnara" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
               <Github size={20} />
             </a>
-            <a href="mailto:hello@example.com" className="text-gray-400 hover:text-orange-500 transition-colors">
+            <a href="mailto:aranjitarchita@gmail.com" className="text-gray-400 hover:text-orange-500 transition-colors">
               <Mail size={20} />
             </a>
           </div>
