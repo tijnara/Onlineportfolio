@@ -53,7 +53,7 @@ export function About() {
                             What drives me as a developer is my passion for the backend—the "engine" of an application. I love designing databases, architecting the logic that makes everything work, and building the APIs that connect it all together. While I'm proficient across the full stack, I find the most satisfaction in creating robust, well-structured backend systems.
                         </p>
                         <p className="text-gray-600 mb-4">
-                            I specialize in Vue.js, Laravel, and Node.js for enterprise applications, with expertise in SQL database design, normalization, and optimization. Whether it's building attendance systems with hardware integration or modernizing legacy systems, I bring both technical skill and creative problem-solving to every project.
+                            I specialize in building full-stack enterprise applications using <strong>Next.js</strong>, <strong>React</strong>, <strong>Vue.js</strong>, and <strong>Node.js</strong>. My expertise lies in designing and optimizing <strong>SQL databases</strong> (MySQL) and architecting APIs with services like <strong>Directus</strong> and <strong>Supabase</strong>. Whether it's building real-time attendance systems with hardware integration or architecting comprehensive ERP systems, I bring both technical skill and creative problem-solving to every project.
                         </p>
                         <div className="flex gap-4 mt-6">
                             <Button className="bg-orange-500 hover:bg-orange-600" asChild>
@@ -80,7 +80,7 @@ export function About() {
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
                             <div className="text-orange-500 mb-2">Enterprise Systems</div>
                             <p className="text-sm text-gray-600">
-                                Modernizing legacy applications and creating scalable business solutions
+                                Architecting ERP, POS, and HR applications from the ground up
                             </p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">

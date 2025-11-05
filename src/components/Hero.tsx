@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Twitter, Mail, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
@@ -32,9 +32,9 @@ export function Hero() {
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <div className="relative">
-              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-xl">
+              <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1737575655055-e3967cbefd03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjIzMDA5NTl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="/me_portfolioHD.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
