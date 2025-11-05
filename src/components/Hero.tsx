@@ -1,8 +1,8 @@
 "use client";
 
-import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+import { Github, Mail, ArrowDown } from "lucide-react";
 import { Button } from "./ui/button";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./ImageWithFallback";
 
 export function Hero() {
   const scrollToContact = () => {
@@ -18,9 +18,6 @@ export function Hero() {
         <div className="text-center">
           {/* Social Links */}
           <div className="flex justify-center gap-4 mb-8">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
-              <Linkedin size={20} />
-            </a>
             <a href="https://github.com/tijnara" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
               <Github size={20} />
             </a>
@@ -32,16 +29,16 @@ export function Hero() {
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <div className="relative">
-              <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
+              <div className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-white shadow-xl">
                 <ImageWithFallback
                   src="/me_portfolioHD.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Decorative Elements */}
-              <div className="absolute -top-4 -left-4 w-16 h-16 bg-orange-500 rounded-full opacity-20"></div>
-              <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-orange-500 rounded-full opacity-20"></div>
+              {/* Decorative Elements (scaled for large photo) */}
+              <div className="absolute -top-6 -left-6 w-16 h-16 md:w-20 md:h-20 bg-orange-500 rounded-full opacity-20"></div>
+              <div className="absolute -bottom-6 -right-6 w-20 h-20 md:w-24 md:h-24 bg-orange-500 rounded-full opacity-20"></div>
             </div>
           </div>
 

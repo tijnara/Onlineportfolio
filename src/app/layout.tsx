@@ -6,12 +6,12 @@ import { Toaster } from "../components/ui/sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Aranjit D. Archita - Full-Stack Developer",
+  title: "Aranjit Archita - Portfolio",
   description: "Full-Stack Developer specializing in Vue.js, Laravel, and Node.js for enterprise applications. Building robust, scalable solutions for complex business needs.",
   keywords: ["Full-Stack Developer", "Vue.js", "Laravel", "Node.js", "Enterprise Applications", "Web Development"],
   authors: [{ name: "Aranjit D. Archita" }],
   openGraph: {
-    title: "Aranjit D. Archita - Full-Stack Developer",
+    title: "Aranjit Archita - Portfolio",
     description: "Full-Stack Developer specializing in Vue.js, Laravel, and Node.js for enterprise applications.",
     type: "website",
   },

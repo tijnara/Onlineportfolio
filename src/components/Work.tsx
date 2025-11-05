@@ -1,14 +1,14 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./ImageWithFallback";
 
 export function Work() {
     const projects = [
         {
             title: "Full-Stack Enterprise System",
             description: "Architected a comprehensive enterprise resource planning (ERP) system. Built a modern frontend with Next.js, React, and Zustand for managing modules like Sales Orders, Inventory, and HR. The backend is powered by Directus and a MySQL database.",
-            image: "https://images.unsplash.com/photo-1759661990336-51bd4b951fea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBsYXB0b3B8ZW58MXx8fHwxNzYyMzM2Mjc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlcnAlMjBkYXNoYm9hcmR8ZW58MXx8fHwxNzYyMzM2Mjc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
             tags: ["Next.js", "React", "Zustand", "Directus", "MySQL", "ERP"],
             link: "https://github.com/tijnara/erp-web_xxxxxxx_divi",
             github: "https://github.com/tijnara",
@@ -16,7 +16,7 @@ export function Work() {
         {
             title: "Web-Based POS System",
             description: "A lightweight, web-based Point of Sale (POS) application built with Next.js and React, using Supabase for the backend and Zustand for state management.",
-            image: "https://images.unsplash.com/photo-1630283017802-785b7aff9aac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYyMjk5NTYyfDA&ixlib.rb-4.1.0&q=80&w=1080",
+            image: "https://images.unsplash.com/photo-1593421191024-26017c2c6d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3MlMjBzeXN0ZW0lMjByZXRhaWx8ZW58MXx8fHwxNzYyMjk5NTYyfDA&ixlib.rb-4.1.0&q=80&w=1080",
             tags: ["Next.js", "React", "Supabase", "Zustand", "React Query", "POS"],
             link: "https://seasidepos.vercel.app/login",
             github: "https://github.com/tijnara",
@@ -24,7 +24,7 @@ export function Work() {
         {
             title: "Multi-Modal Attendance System",
             description: "Created a web-based attendance system that accepts input from physical hardware like fingerprint scanners and RFID readers. Built a Node.js Hardware Bridge using WebSockets to send data from USB hardware to the web app in real-time, with normalized SQL database for efficient logging.",
-            image: "https://images.unsplash.com/photo-1593720213681-e9a8778330a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGV8ZW58MXx8fHwxNzYyMjM5ODAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+            image: "https://images.unsplash.com/photo-1588448339303-b0f3557c6463?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5nZXJwcmludCUyMHNjYW5uZXJ8ZW58MXx8fHwxNzYyMjM5ODAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
             tags: ["Vue.js", "Node.js", "WebSockets", "SQL", "IoT"],
             link: "https://github.com/tijnara/attendance-system-vue-modern",
             github: "https://github.com/tijnara",
@@ -32,7 +32,7 @@ export function Work() {
         {
             title: "Asset & Equipment Management System",
             description: "A system for tracking company assets and equipment. Built with a Node.js/Express backend, MySQL database, and a frontend using Vanilla HTML, CSS, and JavaScript.",
-            image: "https://images.unsplash.com/photo-1630283017802-785b7aff9aac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYyMjk5NTYyfDA&ixlib.rb-4.1.0&q=80&w=1080",
+            image: "https://images.unsplash.com/photo-1521791055366-0d553874125f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnZlbnRvcnklMjBtYW5hZ2VtZW50fGVufDF8fHx8MTc2MjM0MDIyN3ww&ixlib.rb-4.1.0&q=80&w=1080",
             tags: ["JavaScript", "Node.js", "Express", "MySQL", "HTML", "CSS"],
             link: "https://github.com/tijnara/VERTEX-ER_asset_and_equipments",
             github: "https://github.com/tijnara",
@@ -40,7 +40,7 @@ export function Work() {
         {
             title: "HR Medical Dispensing System",
             description: "A web application for managing HR medical inventory and dispensing items to employees. Built with Vanilla JavaScript and a Node.js/Express backend connected to a MySQL database.",
-            image: "https://images.unsplash.com/photo-1759661990336-51bd4b951fea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBsYXB0b3B8ZW58MXx8fHwxNzYyMzM2Mjc3fDA&ixlib.rb-4.1.0&q=80&w=1080",
+            image: "https://images.unsplash.com/photo-1576091160550-2173adae5a1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MjMzNjI3N3ww&ixlib.rb-4.1.0&q=80&w=1080",
             tags: ["JavaScript", "Node.js", "Express", "MySQL", "HTML", "HR"],
             link: "https://github.com/tijnara/VERTEX-ER_HR",
             github: "https://github.com/tijnara",
