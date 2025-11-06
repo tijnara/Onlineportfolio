@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl mb-4 text-orange-500">Aranjit D. Archita</h3>
             <p className="text-gray-400 text-sm">
-              Full-stack developer specializing in enterprise applications using Vue.js, Laravel, and Node.js.
+              Full-stack developer specializing in building comprehensive enterprise solutions. Proven expertise in modern front-end stacks like Next.js/React and Vue.js, paired with robust Node.js backends (Express, WebSockets) and SQL databases.
             </p>
           </div>
 

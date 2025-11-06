@@ -29,23 +29,28 @@ export function Hero() {
                     {/* Profile Image */}
                     <div className="mb-8 flex justify-center">
                         <div className="relative">
-                            <div className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                            {/* Further reduced width for md and lg screens */}
+                            <div className="w-32 md:w-44 lg:w-56 aspect-square rounded-full overflow-hidden border-4 border-white shadow-xl">
                                 <ImageWithFallback
-                                    src="/me_portfolioHD.jpg"
+                                    src="/me_portfolioHD.png"
                                     alt="Profile"
                                     className="w-full h-full object-cover"
                                     fill={true}
-                                    sizes="(max-width: 768px) 12rem, (max-width: 1024px) 16rem, 18rem"
+                                    sizes="(max-width: 768px) 8rem, (max-width: 1024px) 11rem, 14rem"
                                 />
                             </div>
                             {/* Decorative Elements (scaled for large photo) */}
-                            <div className="absolute -top-6 -left-6 w-16 h-16 md:w-20 md:h-20 bg-orange-500 rounded-full opacity-20"></div>
-                            <div className="absolute -bottom-6 -right-6 w-20 h-20 md:w-24 md:h-24 bg-orange-500 rounded-full opacity-20"></div>
+                            {/* You might want to scale these down too if they feel too big now */}
+                            <div className="absolute -top-4 -left-4 w-12 h-12 md:w-16 md:h-16 bg-orange-500 rounded-full opacity-20"></div>
+                            <div className="absolute -bottom-4 -right-4 w-16 h-16 md:w-20 md:h-20 bg-orange-500 rounded-full opacity-20"></div>
                         </div>
                     </div>
 
                     {/* Greeting */}
-                    <p className="text-orange-500 mb-4">👋 Hi, I'm Aranjit D. Archita</p>
+                    <p className="mb-4 text-4xl sm:text-5xl font-bold">
+                        <span className="text-orange-500">👋 Hi, I'm </span>
+                        <span className="text-black text-5xl sm:text-6xl font-extrabold">Aranjit D. Archita</span>
+                    </p>
 
                     {/* Main Heading */}
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-6 max-w-4xl mx-auto">

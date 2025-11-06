@@ -8,7 +8,7 @@ export function Work() {
         {
             title: "Full-Stack Enterprise System",
             description: "Architected a comprehensive enterprise resource planning (ERP) system. Built a modern frontend with Next.js, React, and Zustand for managing modules like Sales Orders, Inventory, and HR. The backend is powered by Directus and a MySQL database.",
-            image: "https://images.unsplash.com/photo-1611926653458-09292211161d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+            image: "/images/erp.jpg",
             tags: ["Next.js", "React", "Zustand", "Directus", "MySQL", "ERP"],
             link: "https://github.com/tijnara/erp-web_xxxxxxx_divi",
             github: "https://github.com/tijnara",
@@ -16,7 +16,7 @@ export function Work() {
         {
             title: "Web-Based POS System",
             description: "A lightweight, web-based Point of Sale (POS) application built with Next.js and React, using Supabase for the backend and Zustand for state management.",
-            image: "https://images.unsplash.com/photo-1557825832-628f80c61c3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+            image: "/images/pos.jpg",
             tags: ["Next.js", "React", "Supabase", "Zustand", "React Query", "POS"],
             link: "https://seasidepos.vercel.app/login",
             github: "https://github.com/tijnara",
@@ -24,7 +24,7 @@ export function Work() {
         {
             title: "Multi-Modal Attendance System",
             description: "Created a web-based attendance system that accepts input from physical hardware like fingerprint scanners and RFID readers. Built a Node.js Hardware Bridge using WebSockets to send data from USB hardware to the web app in real-time, with normalized SQL database for efficient logging.",
-            image: "https://images.unsplash.com/photo-1581093192021-1f95a753c15c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+            image: "/images/attendance.jpg",
             tags: ["Vue.js", "Node.js", "WebSockets", "SQL", "IoT"],
             link: "https://github.com/tijnara/attendance-system-vue-modern",
             github: "https://github.com/tijnara",
@@ -32,7 +32,7 @@ export function Work() {
         {
             title: "Asset & Equipment Management System",
             description: "A system for tracking company assets and equipment. Built with a Node.js/Express backend, MySQL database, and a frontend using Vanilla HTML, CSS, and JavaScript.",
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+            image: "/images/assets.jpg",
             tags: ["JavaScript", "Node.js", "Express", "MySQL", "HTML", "CSS"],
             link: "https://github.com/tijnara/VERTEX-ER_asset_and_equipments",
             github: "https://github.com/tijnara",
@@ -40,7 +40,7 @@ export function Work() {
         {
             title: "HR Medical Dispensing System",
             description: "A web application for managing HR medical inventory and dispensing items to employees. Built with Vanilla JavaScript and a Node.js/Express backend connected to a MySQL database.",
-            image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+            image: "/images/medical.jpg",
             tags: ["JavaScript", "Node.js", "Express", "MySQL", "HTML", "HR"],
             link: "https://github.com/tijnara/VERTEX-ER_HR",
             github: "https://github.com/tijnara",
@@ -81,8 +81,8 @@ export function Work() {
                                             key={idx}
                                             className="px-3 py-1 bg-orange-50 text-orange-500 rounded-full text-xs"
                                         >
-                      {tag}
-                    </span>
+                                            {tag}
+                                        </span>
                                     ))}
                                 </div>
                                 <div className="flex gap-2">
@@ -108,6 +108,19 @@ export function Work() {
                                             Code
                                         </a>
                                     </Button>
+                                    {/* Add POS Repo button for Web-Based POS System only */}
+                                    {project.title === "Web-Based POS System" && (
+                                        <Button
+                                            variant="outline"
+                                            size="sm"
+                                            className="flex-1 hover:bg-orange-500 hover:text-white hover:border-orange-500"
+                                            asChild
+                                        >
+                                            <a href="https://github.com/tijnara/WebBasedPOS" target="_blank" rel="noopener noreferrer">
+                                                POS Repo
+                                            </a>
+                                        </Button>
+                                    )}
                                 </div>
                             </div>
                         </Card>
