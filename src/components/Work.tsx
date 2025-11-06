@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, GithubIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { ImageWithFallback } from "./ImageWithFallback";
@@ -104,7 +104,7 @@ export function Work() {
                                         asChild
                                     >
                                         <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                            <Github size={16} className="mr-2" />
+                                            <GithubIcon size={16} className="mr-2" />
                                             Code
                                         </a>
                                     </Button>

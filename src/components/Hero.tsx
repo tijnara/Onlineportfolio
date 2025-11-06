@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Mail, ArrowDown } from "lucide-react";
+import { GithubIcon, Mail, ArrowDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./ImageWithFallback";
 
@@ -19,7 +19,7 @@ export function Hero() {
                     {/* Social Links */}
                     <div className="flex justify-center gap-4 mb-8">
                         <a href="https://github.com/tijnara" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
-                            <Github size={20} />
+                            <GithubIcon size={20} />
                         </a>
                         <a href="mailto:aranjitarchita@gmail.com" className="text-gray-400 hover:text-orange-500 transition-colors">
                             <Mail size={20} />

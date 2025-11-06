@@ -1,4 +1,4 @@
-import { Github, Mail, Heart } from "lucide-react";
+import { GithubIcon, Mail, Heart } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -52,7 +52,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
               >
-                <Github size={20} />
+                <GithubIcon size={20} />
               </a>
               <a
                 href="mailto:aranjitarchita@gmail.com"
